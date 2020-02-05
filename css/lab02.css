@@ -1,4 +1,4 @@
-.flex-container {
+#peopleList {
   display: flex;
   align-items: center;
   border: 1px solid lightgrey;
@@ -11,7 +11,7 @@
   width: 60%;
   margin: 0 auto;
 }
-.flex-container:hover {
+#peopleList:hover {
   background-color: lightgrey;
 }
 
@@ -33,13 +33,10 @@ p {
     margin-left:10%;
 }
 
-#searchBar div{
-   margin: 0 auto;
-}
 
 #searchBar div form{
     display:inline-block;
-    width: 80%;
+    width: 65%;
 }
 
 #searchValue {
@@ -59,10 +56,38 @@ p {
   margin: 10px 5px 5px 10px;
 }
 
-#name {
-
+#addForm {
+  display: inline-block;
+  width: 100%
 }
 
-#school {
+#artistFormDiv{
+    display: none;
+    margin: 0 auto;
+    width:50%;
+}
+#artistFormDiv form {
+    text-align: center;
+}
+#artistFormDiv form input{
+    text-align: center;
+    width: 70%;
+}
+#artistFormDiv form div{
+    border-width: 1px;
+    border-color: lightgrey;
+    margin-left:15%;
+    width:70%;
+}
+#artistFormDiv form button{
+    width:30%;
+}
 
+#img {
+  height: 100px;
+  width: 100px;
+}
+
+li {
+  list-style-type: none;
 }

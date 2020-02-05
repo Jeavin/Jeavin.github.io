@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="./js/lab02.js" defer></script>
     <link rel="stylesheet" href="./css/lab02.css" />
     <title>
       Lab 02
@@ -15,53 +16,24 @@
             <form id="searchInput">
                 <input id="searchValue" type="search" name="search">
             </form>
+            <button id="newArtistBtn" type="button" onclick="toggleArtistForm()">
+              Add artist
+            </button>
         </div>
     </div>
+    <div id="artistFormDiv">
+        <form id="addForm">
+            <input class="artistName" maxlength="40" placeholder="Name" type="text" name="name">
+            <input class="artistDesc" maxlength="40" placeholder="About Artist" type="text" name="disc">
+            <input class="artistImg" placeholder="Image URL" type="text" name="img">
+            <div>
+                <button type="button" onclick="addArtist()">Add</button>
+            </div>
+        </form>
+    </div>
     <div class="people-container">
-      <div class="flex-container">
-        <div class="people">
-          <img id="faceImg" src="./images/1.jpg">
-        </div>
-        <div class="card">
-          <p id="name">Barot Bellingham</p>
-          <p id="info" href="#">Royal Academy of Painting and Sculpture</a>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="people">
-          <img id="faceImg" src="./images/2.jpg">
-        </div>
-        <div class="card">
-          <p id="name">Barot Bellingham</p>
-          <p id="info" href="#">Royal Academy of Painting and Sculpture</a>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="people">
-          <img id="faceImg" src="./images/3.jpg">
-        </div>
-        <div class="card">
-          <p id="name">Barot Bellingham</p>
-          <p id="info" href="#">Royal Academy of Painting and Sculpture</a>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="people">
-          <img id="faceImg" src="./images/4.jpg">
-        </div>
-        <div class="card">
-          <p id="name">Barot Bellingham</p>
-          <p id="info" href="#">Royal Academy of Painting and Sculpture</a>
-        </div>
-      </div>
-      <div class="flex-container">
-        <div class="people">
-          <img id="faceImg" src="./images/5.jpg">
-        </div>
-        <div class="card">
-          <p id="name">Barot Bellingham</p>
-          <p id="info" href="#">Royal Academy of Painting and Sculpture</a>
-        </div>
+      <ul id="peopleList">
+
       </div>
     </div>
   </body>
