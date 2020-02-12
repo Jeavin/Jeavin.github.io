@@ -1,7 +1,8 @@
 #peopleList {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   border: 1px solid lightgrey;
+  width: 60%;
 }
 
 .people-container{
@@ -11,7 +12,29 @@
   width: 60%;
   margin: 0 auto;
 }
-#peopleList:hover {
+
+#person {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.del {
+  background-color: red;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+.info {
+  margin-left: 10%;
+  width: 10%;
+}
+
+ul {
+  padding: 0 0 0 0;
+}
+
+#person:hover {
   background-color: lightgrey;
 }
 
@@ -36,7 +59,7 @@ p {
 
 #searchBar div form{
     display:inline-block;
-    width: 65%;
+    width: 50%;
 }
 
 #searchValue {
