@@ -17,7 +17,7 @@ app.use(express.static(__dirname));
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/lab02.html'));
 });
-app.listen(8888, () => console.log('server started at port 8888'));
+app.listen(process.env.port || 3000);
 
 //load artists
 app.get('/loadProfiles', function(req, res) {
